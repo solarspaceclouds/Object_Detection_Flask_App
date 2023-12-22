@@ -2,6 +2,7 @@
 ## Instructions
 1. Download yolov3.weights (from https://github.com/patrick013/Object-Detection---Yolov3/blob/master/model/yolov3.weights)
 2. Install required libraries as specified by requirements.txt
+3. Run the python script and launch local host
    
 ## Object Detection (Person or Car respectively)
 ```python 
