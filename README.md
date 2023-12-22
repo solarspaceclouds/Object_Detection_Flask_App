@@ -15,10 +15,12 @@ python3 app_obj_det.py
 
 1. Person Detection
 Person selection is the default in the drop-down menu
+
 ![people](https://github.com/solarspaceclouds/Object_Detection_Flask_App/assets/65459827/fd72bc5c-0208-4527-9d4e-744443b1dbda)
 
-2. Car Detection
+3. Car Detection
 Pick the Car selection in the drop-down menu
+
 ![cars_only](https://github.com/solarspaceclouds/Object_Detection_Flask_App/assets/65459827/9197770c-1c28-40d5-81c8-2406e9f58887)
 
 
@@ -30,5 +32,6 @@ python3 app_vehicle_det.py
 ### Steps:
 1. Upload image (using 'Choose File' button)
 2. Click 'Detect Vehicles' button to view vehicles detection results
+
 ![vehicles](https://github.com/solarspaceclouds/Object_Detection_Flask_App/assets/65459827/8bfce247-9e7f-4d8b-996d-8480f96601ab)
 
