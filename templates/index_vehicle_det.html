@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Detection</title>
+</head>
+<body>
+    <h1>Upload Image for Vehicle Detection</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Detect Vehicles</button>
+    </form>
+
+    <!-- Add an <img> element to display the uploaded image -->
+    <img id="uploaded-image" src="" alt="Uploaded Image" style="display: none; max-width: 400px;">
+
+    <!-- Add JavaScript to show the uploaded image -->
+    <script>
+        // Get references to the file input and the image element
+        const fileInput = document.querySelector('input[type="file"]');
+        const uploadedImage = document.getElementById('uploaded-image');
+
+        // Add an event listener to the file input
+        fileInput.addEventListener('change', function() {
+            // Check if a file has been selected
+            if (this.files.length > 0) {
+                const file = this.files[0];
+                const objectURL = URL.createObjectURL(file);
+
+                // Set the image source and display it
+                uploadedImage.src = objectURL;
+                uploadedImage.style.display = 'block';
+            } else {
+                // If no file is selected, hide the image
+                uploadedImage.src = '';
+                uploadedImage.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
